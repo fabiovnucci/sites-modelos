@@ -19,8 +19,25 @@
         h5 {
             font-family: 'Chewy', cursive;
         }
-    </style>
 
+        /* Ajustando a imagem no header */
+        .header-img {
+            max-width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+
+        /* Ajuste nos textos e tamanho das colunas no celular */
+        @media (max-width: 768px) {
+            .navbar-nav {
+                text-align: center;
+            }
+
+            .card-title {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
 
 </head>
 
@@ -45,51 +62,33 @@
                     <li class="nav-item"><a class="nav-link px-3" href="#sobre"
                             style="font-size: 1.2rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.6);">Sobre Nós</a></li>
                 </ul>
-
-
-
             </div>
         </div>
     </nav>
 
-
     <header class="py-5 text-black text-center bg-warning-subtle">
-
-        <div class="container"><img src="./assets/ChatGPT_Image_14_de_abr._de_2025__21_57_52.png" alt="Imagem do card"
-                class="img-fluid  " style="max-width: 900px; height: auto; object-fit: contain;">
+        <div class="container">
+            <img src="./assets/ChatGPT_Image_14_de_abr._de_2025__21_57_52.png" alt="Imagem do card"
+                class="img-fluid header-img">
             <h1 class="display-5 mb-4 shadow-lg ">Bem-vindo a Casa do Pet</h1>
-
             <h4>Seu animal em primeiro lugar</h4>
-
         </div>
     </header>
 
     <section class="container-fluid py-5 bg-warning-subtle">
-
         <div class="container">
             <div class="row align-items-center justify-content-center text-white text-center text-md-start">
                 <div class="col-md-6" id="historia">
-                    <h1 class="mb-5  text-black text-center">Nossa História</h1>
+                    <h1 class="mb-5 text-black text-center">Nossa História</h1>
                     <p class="mx-auto text-black text-center">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio a suscipit excepturi blanditiis,
-                        voluptates incidunt iste, deserunt hic cupiditate accusamus similique. Aut officia officiis
-                        reprehenderit dicta nesciunt, ipsum, dolorem assumenda illum quisquam dignissimos deleniti, ea
-                        commodi nostrum delectus iure quis rerum consectetur alias pariatur accusamus aperiam adipisci
-                        eum.
-                        Nihil, fuga?
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                        reprehenderit dicta nesciunt, ipsum, dolorem assumenda illum quisquam dignissimos deleniti, ea
-                        commodi nostrum delectus iure quis rerum consectetur alias pariatur accusamus aperiam adipisci
-                        eum.
-                        Nihil, fuga?
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit...
                     </p>
                 </div>
-
             </div>
         </div>
     </section>
     <div style="background: linear-gradient(to bottom, #a1866f, #3e2d23);">
+
         <section class="text-black py-5" id="serviços">
             <div class="container">
                 <h1 class="text-center mb-5">Nossos Serviços</h1>
@@ -142,18 +141,14 @@
             </div>
         </section>
 
-
-        <section class="py-5 " id="sobre">
+        <section class="py-5" id="sobre">
             <div class="container">
                 <h1 class="text-center mb-5 text-black">Sobre Nós</h1>
                 <p class="text-center text-black">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi similique atque quos doloribus fuga
-                    dolore accusamus. Hic officia dolore nemo aut mollitia unde similique? Fugit minima at molestiae
-                    quaerat, totam ad deleniti possimus sint cum laboriosam aut tempora rem ipsam...
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit...
                 </p>
             </div>
         </section>
-
 
         <section class="py-5" id="redesociais">
             <div class="container">
@@ -167,7 +162,6 @@
             </div>
         </section>
     </div>
-
     <footer class="text-center py-3" style="background-color:black;">
         <p class="mb-0 text-white"><strong>&reg; 2025 Todos os direitos reservados.</strong></p>
     </footer>
