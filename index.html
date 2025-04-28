@@ -4,34 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Casa do Pet - Seus animais em primeiro lugar. Serviços de adestramento, banho e tosa, e muito mais para o seu pet!">
     <title>Seu Site Profissional</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <style>
         .social-icon {
             text-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
+            transition: transform 0.3s ease, opacity 0.3s ease;
         }
 
-        h1,
-        h2,
-        h3,
-        h4,
-        h5 {
+        .social-icon:hover {
+            transform: scale(1.1);
+            opacity: 0.8;
+        }
+
+        h1, h2, h3, h4, h5 {
             font-family: 'Chewy', cursive;
         }
 
-        /* Ajustando a imagem no header */
         .header-img {
             max-width: 100%;
             height: auto;
             object-fit: contain;
         }
 
-        /* Ajuste nos textos e tamanho das colunas no celular */
         @media (max-width: 768px) {
             .navbar-nav {
                 text-align: center;
@@ -44,6 +44,28 @@
 
         .shadow-strong {
             box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.75);
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+        }
+
+        footer a {
+            text-decoration: none;
+        }
+
+        #btnTopo {
+            position: fixed;
+            bottom: 80px;
+            right: 20px;
+            display: none;
+            z-index: 99;
+            opacity: 0.7;
+        }
+
+        #btnTopo:hover {
+            opacity: 1;
         }
     </style>
 
@@ -76,7 +98,7 @@
 
     <header class="py-5 text-black text-center bg-warning-subtle">
         <div class="container">
-            <img src="./assets/ChatGPT_Image_14_de_abr._de_2025__21_57_52.png" alt="Imagem do card"
+            <img src="./assets/ChatGPT_Image_14_de_abr._de_2025__21_57_52.png" alt="Imagem da Casa do Pet"
                 class="img-fluid header-img">
             <h1 class="display-5 mb-4 shadow-lg ">Bem-vindo a Casa do Pet</h1>
             <h4>Seu animal em primeiro lugar</h4>
@@ -90,15 +112,7 @@
                     <h1 class="mb-5 text-black text-center">Nossa História</h1>
                     <p class="mx-auto text-black text-center">
                         Lorem dignissimos eligendi hic aut! Mollitia aliquid consequuntur repudiandae modi porro.
-                        Cupiditate vitae
-                        alias consequuntur! Ex modi vero cumque aliquam. ipsum dolor sit amet consectetur adipisicing
-                        elit Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, necessitatibus saepe
-                        dignissimos eligendi hic aut! Mollitia aliquid consequuntur repudiandae modi porro. Cupiditate
-                        vitae
-                        alias consequuntur! Ex modi vero cumque aliquam. ipsum dolor sit ipsum dolor sit amet
-                        consectetur adipisicing elit. Consequuntur esse, explicabo expedita
-                        dolor tempore nihil quod dolorem illo iure! Velit cum ratione quo rerum facilis incidunt quae
-                        minima nisi facere. ipsum dolor sit, amet consectetur adipisicing elit...
+                        Cupiditate vitae alias consequuntur! Ex modi vero cumque aliquam. ipsum dolor sit amet consectetur adipisicing elit Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                     </p>
                 </div>
             </div>
@@ -114,7 +128,7 @@
                         <div class="card text-center h-100 shadow-strong">
                             <div class="card-body">
                                 <h5 class="card-title mb-3 d-flex justify-content-center align-items-center">
-                                    <i class="fas fa-hand-point-up me-2"></i> Adestramento
+                                    <i class="bi bi-hand-point-up me-2"></i> Adestramento
                                 </h5>
                                 <p class="card-text">Descrição do serviço oferecido.</p>
                             </div>
@@ -125,8 +139,8 @@
                         <div class="card text-center h-100 shadow-strong">
                             <div class="card-body">
                                 <h5 class="card-title mb-3 d-flex justify-content-center align-items-center">
-                                    <i class="fas fa-shower me-2"></i>
-                                    <i class="fas fa-scissors me-2"></i> Banho e Tosa
+                                    <i class="bi bi-shower me-2"></i>
+                                    <i class="bi bi-scissors me-2"></i> Banho e Tosa
                                 </h5>
                                 <p class="card-text">Descrição do serviço oferecido.</p>
                             </div>
@@ -137,7 +151,7 @@
                         <div class="card text-center h-100 shadow-strong">
                             <div class="card-body">
                                 <h5 class="card-title mb-3 d-flex justify-content-center align-items-center">
-                                    <i class="fas fa-pills me-2"></i> Medicação
+                                    <i class="bi bi-pills me-2"></i> Medicação
                                 </h5>
                                 <p class="card-text">Descrição do serviço oferecido.</p>
                             </div>
@@ -147,7 +161,7 @@
                         <div class="card text-center h-100 shadow-strong">
                             <div class="card-body">
                                 <h5 class="card-title mb-3 d-flex justify-content-center align-items-center">
-                                    <i class="fas fa-hotel me-2"></i> Hotelzinho
+                                    <i class="bi bi-hotel me-2"></i> Hotelzinho
                                 </h5>
                                 <p class="card-text">Descrição do serviço oferecido.</p>
                             </div>
@@ -164,40 +178,26 @@
                         <h1 class="mb-5 text-black text-center">Sobre Nós</h1>
                         <p class="mx-auto text-black text-center">
                             Lorem dignissimos eligendi hic aut! Mollitia aliquid consequuntur repudiandae modi porro.
-                            Cupiditate vitae
-                            alias consequuntur! Ex modi vero cumque aliquam. ipsum dolor sit amet consectetur
-                            adipisicing
-                            elit Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, necessitatibus
-                            saepe
-                            dignissimos eligendi hic aut! Mollitia aliquid consequuntur repudiandae modi porro.
-                            Cupiditate
-                            vitae
-                            alias consequuntur! Ex modi vero cumque aliquam. ipsum dolor sit ipsum dolor sit amet
-                            consectetur adipisicing elit. Consequuntur esse, explicabo expedita
-                            dolor tempore nihil quod dolorem illo iure! Velit cum ratione quo rerum facilis incidunt
-                            quae
-                            minima nisi facere. ipsum dolor sit, amet consectetur adipisicing elit...
+                            Cupiditate vitae alias consequuntur! Ex modi vero cumque aliquam. ipsum dolor sit amet consectetur
+                            adipisicing elit.
                         </p>
                     </div>
                 </div>
             </div>
         </section>
 
-
-
-
         <section class="py-5" id="redesociais">
             <div class="container">
                 <h1 class="text-black text-center mb-5">Redes Sociais</h1>
                 <div class="d-flex justify-content-center gap-4 flex-wrap">
                     <a href="#" class="social-icon" style="color: #25D366;">
-                        <i class="bi bi-whatsapp fs-2 "></i>
+                        <i class="bi bi-whatsapp fs-2"></i>
                     </a>
                     <a href="#" class="social-icon" style="color: #cd486b;">
-                        <i class="bi bi-instagram fs-2  "></i>
+                        <i class="bi bi-instagram fs-2"></i>
                     </a>
                     <a href="#" class="social-icon" style="color: #316FF6;">
-                        <i class="bi bi-facebook fs-2 "></i>
+                        <i class="bi bi-facebook fs-2"></i>
                     </a>
                     <a href="#" class="social-icon" style="color: #0077B5;">
                         <i class="bi bi-linkedin fs-2"></i>
@@ -206,33 +206,19 @@
             </div>
         </section>
 
-
     </div>
 
-
-    <footer class="text-center py-3" style="background-color:black;">
+    <footer class="text-center py-3">
         <div class="d-flex justify-content-center align-items-center">
             <p class="mb-0 text-white me-2"><strong>&reg; 2025 Todos os direitos reservados.</strong></p>
             <a href="https://github.com/fabiovnucci" target="_blank" title="Clique aqui">
-                <img src="assets/eu.png"
-                    style="width: 40px; height: 40px; box-shadow: 0 0 10px 5px rgba(0, 0, 255, 0.8);"
+                <img src="assets/eu.png" style="width: 40px; height: 40px; box-shadow: 0 0 10px 5px rgba(0, 0, 255, 0.8);"
                     class="img-fluid rounded-circle">
             </a>
         </div>
     </footer>
 
-
-
-
-
-
-
-
-
-
-
-    <button onclick="topFunction()" id="btnTopo" class="btn btn-primary rounded-circle"
-        style="position: fixed; bottom: 80px; right: 20px; display: none; z-index: 99;">
+    <button onclick="topFunction()" id="btnTopo" class="btn btn-primary rounded-circle">
         ↑
     </button>
 
@@ -243,21 +229,25 @@
 
         function scrollFunction() {
             const btn = document.getElementById("btnTopo");
-            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
                 btn.style.display = "block";
+                btn.style.opacity = 1;
             } else {
                 btn.style.display = "none";
             }
         }
 
         function topFunction() {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
         }
     </script>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
+
+
+
